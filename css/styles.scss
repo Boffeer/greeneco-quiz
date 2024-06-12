@@ -1,0 +1,136 @@
+@import "./_normalize";
+
+
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/*
+  Подключает шфрит
+  @include font('Inter', normal, 400, '../resources/fonts/inter/inter-regular');
+  обрати внимание, что в @include ты пишеь название шрифта без расширения, он сам подтянет woff и woff2
+ */ 
+ @mixin font($fname, $fstyle, $fweight, $furl) {
+    @font-face {
+      font-family: $fname;
+      font-style: $fstyle;
+      font-weight: $fweight;
+      font-stretch: 100%;
+      src: url("#{$furl}.woff2") format("woff2"),
+        url("#{$furl}.woff") format("woff");
+  
+      font-display: swap;
+    }
+}
+@include font('Bebas', normal, 700, '../fonts/bebasneue/BebasNeueBold');
+@include font('Bebas', normal, 400, '../fonts/bebasneue/BebasNeueRegular');
+@include font('Roboto', normal, 700, '../fonts/roboto/Roboto-Bold');
+@include font('Roboto', normal, 400, '../fonts/roboto/Roboto-Regular');
+@include font('Roboto', normal, 900, '../fonts/roboto/Roboto-black');
+@include font('gilroy', normal, 400, '../fonts/gilroy/Gilroy-Regular');
+@include font('montserrat', normal, 400, '../fonts/montserrat/montserrat-Bold');
+
+
+$tablet: 992px;
+$mobile: 601px;
+
+
+
+
+
+html {
+    
+    --fz-modifier: 0.520834;
+    --base-size: 1vw;
+    font-size: #{'calc(var(--fz-modifier) * var(--base-size))'};//calc(0.342466 * var(--base-size)); //10px for 1920×1000
+    --tr-regular: all 0.3s ease;
+    --tr: 0.3s;
+
+    // @media (max-width:2560px) {
+    //   --fz-modifier: 0.390625;
+    // }
+
+    @media (max-width:1600px) {
+      --fz-modifier: 0.625;
+    }
+
+    @media (max-width:1536px) {
+      --fz-modifier: 0.651042;
+    }
+
+    @media (max-width:1366px) {
+      --fz-modifier: 0.732065;
+    }
+
+    @media (max-width:1280px) {
+      --fz-modifier: 0.78125;
+    }
+
+    @media (max-width:1024px) {
+      --fz-modifier: 0.976567;
+    }
+
+    @media (max-width:$tablet) {
+      --fz-modifier: 1.008062;
+    }
+    
+    @media (max-width:810px) {
+      --fz-modifier: 1.23457;
+    }
+
+    @media (max-width:768px) {
+      --fz-modifier: 1.302089;
+    }
+
+    @media (max-width:$mobile) {
+      --fz-modifier: 3.125;
+    }
+}
+ 
+body {
+    font-size: 1.6rem;
+    font-family: 'roboto', sans-serif;
+    
+}
+
+.container {
+    max-width: 117rem;
+    margin-left: auto; 
+    margin-right: auto;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    
+}
+
+
+h1,h2,h3,h4,h5,h6 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+@import "./libs/_bayan";
+@import "./libs/swiper";
+@import "./libs/fancybox";
+
+
+@import "./az_components/_btn";
+@import "./az_components/_input";
+@import "./az_components/_quiz";
+@import "./az_components/_swiper-overrides";
+@import "./az_components/_select";
+@import "./az_components/_popup";
+
+@import "./thk_section/_header";
+@import "./thk_section/_lead";
+@import "./thk_section/_hero-thk";
+@import "./thk_section/_example";
+@import "./thk_section/_recommendation";
+@import "./thk_section/_rewies";
+@import "./thk_section/_faq";
+@import "./thk_section/_footer";
+
+
+

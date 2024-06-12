@@ -1,0 +1,1421 @@
+// header
+.ceil-header {
+    padding-top: 5rem;
+    position: relative;
+    z-index: 5;
+  }
+  
+  .ceil-header__container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto 1fr auto;
+    grid-template-columns: auto 1fr auto;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    grid-gap: 4rem;
+  }
+
+  .ceil-header__slogan-img {
+    width: 18rem;
+    height: 4rem;
+  }
+
+  .ceil-header__tel {
+    display: flex;
+    justify-content: end;  
+    font-weight: 500;
+    font-size: 2.2rem;
+    line-height: 100%;
+    text-align: right;
+    letter-spacing: 0.05em;
+    color: #73C845;
+  }
+  
+  .ceil-header__tel:hover {
+    color: #F7D06D;;
+  }
+// header
+
+
+.get-price {
+    background: #FBFBFB;
+    background-size: cover;
+}
+
+.get-price_container {
+
+}
+
+.get-price__top {
+    display: grid;
+    grid-template-columns: auto 39rem;
+}
+
+.get_price__info-desc {
+    color: #232529;
+    font-size: 4.6rem;
+    font-family: 'raleway', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    padding-top: 5rem;
+    margin-left: -1rem;
+}
+
+.get_price__info-desc-hl {
+    color: #EBEBEB;
+    padding: 0.3rem 0.6rem;
+    border-radius: 0.8rem;
+    margin-left: -0.8rem;
+    background: #73C845;
+}
+
+.get_price__info-desc-bold {
+    font-weight: 700;
+}
+
+.get-price__title-desc {
+    color: #232529;
+    font-size: 3.26rem;
+    font-family: 'raleway', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 116.9%;
+    margin-top: 5.5rem;
+    margin-left: -1rem;
+}
+
+.get-price__title-desc-bold {
+    font-weight: 600;
+}
+
+.get-price__features {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.7rem;
+    margin-top: 5rem; 
+    padding-left: 1.5rem;
+}
+
+.get-price-feature {
+    position: relative;
+    border-radius: 2.1rem;
+    background: #fff;
+    width: 21rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;  
+    margin-right: auto;
+    margin-left: -0.6rem;
+    padding-top: 4.8rem;
+}
+
+.get-price__item-img {
+    width: 8.2rem;
+    height: 4.2rem;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.get-price-feature__desc {
+    color: #282828;
+    font-size: 1.4rem;
+    font-family: 'roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 115.4%;
+    padding-top: 2.5rem;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.get-price__quiz {
+    display: grid;
+    grid-template-columns: auto 40rem;
+    padding-bottom: 2rem;
+}
+
+
+.quiz__hint {
+    background: #FFF;
+    margin-left: 5rem;
+    margin-right: -1.4rem;
+    margin-top: 5.1rem;
+    margin-bottom: 33rem;
+}
+
+.get-price__end-title {
+    color: #282828;
+    font-size: 1.8rem;
+    font-family: 'roboto', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 115.4%;
+    padding-top: 3rem;
+    padding-left: 3rem;
+    margin-bottom: 1rem;
+}
+
+.get-price__end-subtitle {
+    color: #282828;
+    font-size: 1.5rem;
+    font-family: 'roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 145%;
+    padding-left: 3rem;
+    margin-top: 0rem;
+}
+
+.get-price__boss-title {
+    color: #282828;
+    font-size: 1.8rem;
+    font-family: 'roboto', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 115.4%;
+    padding-left: 2.9rem;
+}
+
+.get-price__boss-subtitle {
+    color: #282828;
+    font-size: 1.5;
+    font-family: 'roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 145%;
+    margin-top: -1.2rem;
+    padding-left: 2.9rem;
+    padding-bottom: 3rem;
+}
+
+.quiz__swiper.swiper-autoheight .swiper-slide {
+    overflow-y: visible;
+}
+
+.quiz__swiper {
+    position: relative;
+    
+}
+
+.quiz__swiper.swiper {
+    overflow-y: visible;
+    position: relative;
+    z-index: 2;
+}
+
+.quiz {
+    width: 74rem;
+}
+
+.quiz__head {
+    display: flex;
+    
+    margin-top: 5.1rem;
+    margin-left: -1.2rem;
+    padding-bottom: 1.8rem;
+    margin-right: -1rem;
+    background: #FFF;
+}
+
+.quiz__head-last-step {
+
+}
+
+.quiz__head-icon {
+    position: relative;
+    width: 1.45rem;
+    height: 2.15rem;
+    margin-left: 6.4rem;
+    margin-top: 2.1rem;
+
+}
+
+.quiz__head-title br {
+    display: none;
+}
+
+.quiz__head-title {
+    display: inline-block;
+    position: relative;
+    color: #282828;
+    font-size: 1.4rem;
+    font-family: 'roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 115.4%;
+    padding-left: 1.9rem;
+    padding-top: 2.7rem;
+}
+
+.qiuz__pagination {
+    color: #282828;
+    text-align: right;
+    font-size: 1.4rem;
+    font-family: 'roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 115.4%;
+    letter-spacing: normal;
+    padding-top: 2.6rem;
+    padding-left: 22rem;
+}
+
+.quiz__body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-left: -1.2rem;
+    margin-right: -1rem;
+    margin-top: 0.1rem;
+    padding-left: 6rem;
+    background: #fff;
+}
+
+.quiz__steps {
+    width: 76rem;
+    height: auto;
+    position: relative;
+}
+
+
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.quiz__step {
+    margin-bottom: 4rem;
+}
+
+.quiz__step-title {
+    color: #282828;
+    font-size: 2.4rem;
+    font-family: 'roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 115.4%;
+    margin-bottom: 2.7rem; 
+    padding-top: 4rem;
+}
+
+.form-control {
+    margin-bottom: 4rem;
+}
+
+.form-select__input {
+    display: block;
+    color: #282828;
+    font-size: 1.4rem;
+    font-family: 'roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 115.4%;
+    border: 0.1rem solid #D1D1D1;
+    background: #F5F5F5;
+    width: 64rem;
+    min-height: 6.4rem;
+    height: 100%;
+    margin-left: 0.2rem;
+    padding-left: 1rem;
+}
+
+.input.quiz__input {
+    background-color: #f5f5f5;
+    border-radius: 0.5rem;
+    position: relative;
+    padding: 2rem 6.6rem;
+    border: 1px solid #b3b3b3;
+    margin-right: 11.9rem;
+    margin-left: 0.2rem;
+    margin-bottom: 2rem;
+}
+
+.input__field {
+    background-color: #f5f5f5;
+    margin-bottom: 0rem;
+    border-radius: 1.1rem;
+    border: 0.1rem solid #D1D1D1;
+}
+
+.form-select--active .form-select__list {
+    border: 0.1rem solid #D1D1D1;
+}
+
+.field.input__field {
+    background-color: #f5f5f5;
+    margin-bottom: 0rem;
+    border-radius: 1.1rem;
+    border: none;
+}
+
+
+
+.check {
+    display: block;
+}
+
+.check__desc-info {
+    width: 30rem;
+    border-radius: 1.1rem;
+    border: 0.1rem solid #D1D1D1;
+    background: #FFF;
+    color: #282828;
+    font-family: 'roboto', sans-serif;
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 115.4%;
+    padding-top: 2.4rem;
+    padding-bottom: 2.4rem;
+    padding-right: 3rem;
+    padding-left: 4rem;
+}
+
+.check__desc {
+    text-align: center;
+    color: #282828;
+    text-align: center;
+    font-family: 'roboto', sans-serif;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 115.4%;
+}
+
+.check--big {
+    display: block;
+    padding-left: 1rem;
+}
+
+.form-select__cards.form-select__card--info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-right: 10rem;
+}
+
+.check__input {
+    position: absolute;
+    width: 0.1rem;
+    height: 0.1rem;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+}
+
+.check__box {
+    position: absolute;
+    margin-left: 9.8rem;
+    margin-top: 12.6rem;
+    width: 2.2rem;
+    height: 2.2rem;
+    background-repeat: no-repeat;
+    background-image: url(../img/quiz/chekbox/nocheck.svg);
+}
+
+.check__input:checked + .check__box  {
+    background-image: url(../img/quiz/chekbox/checked.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+}
+
+.check__box-desc {
+    position: absolute;
+    margin-top: 3.6rem;
+    margin-left: 1rem;
+    width: 2.2rem;
+    height: 2.2rem;
+    background-repeat: no-repeat;
+    background-image: url(../img/quiz/chekbox/nocheck.svg);
+}
+
+.check__input:checked + .check__box-desc  {
+    background-image: url(../img/quiz/chekbox/checked.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+}
+
+
+.check__img {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    max-width: 20rem;
+    height: 13.5rem;
+    object-fit: cover;
+    width: 100%;
+    box-shadow: 0 1px 5px 0 rgba(0,0,0,.2);
+    border-radius: 4px;
+    margin-bottom: 1rem;
+}
+
+.check__img--big {
+    display: block;
+    max-width: 16rem;
+    height: 21.2rem;
+    background-size: cover;
+    width: 100%;
+    box-shadow: 0 1px 5px 0 rgba(0,0,0,.2);
+    border-radius: 4px;
+    margin-bottom: 1rem;
+    object-fit: cover;
+}
+
+.quiz__hint-media {
+    display: block;
+    padding-bottom: 2rem;
+}
+
+.quiz__hont-pic {
+    width: 100%;
+    height: 100%;
+}
+
+.quiz__hint-img {
+    display: block;
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+
+.check__box {
+    display: flex;
+    align-items: flex-end;
+    
+}
+// last checkbox
+.check-last {
+    padding-left: 3.5rem;
+}
+
+.check__input-last {
+    position: absolute;
+    width: 0.1rem;
+    height: 0.1rem;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+}
+
+.check__box-last {
+    position: absolute;
+    width: 1.5rem;
+    height: 1.5rem;
+    box-shadow: 0 0 0 0.3rem #73C845;
+    margin-left: -2.5rem;
+    margin-top: 0.2rem;
+    background: #fff;
+}
+
+.check__input-last:checked + .check__box-last  {
+    background: #fff;
+    background-image: url(../img/quiz/cheked-tag.svg);
+}
+
+
+
+.form-select__cards {
+    
+}
+
+.form-select__cards.form-select__card--small {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-right: 10rem;
+    padding-left: 0.8rem;
+}
+
+.form-select__cards.form-select__card--big {
+    display: flex;
+    margin-bottom: 2rem;
+    padding-right: 12rem;
+    height: 21.2rem;
+    width: 100%;
+}
+
+.quiz__form-btn {
+    display: none;
+}
+
+.quiz--last__slide .quiz__buttons {
+    margin-top: 11rem;
+}
+
+.quiz--last__slide.quiz .swiper-button-prev {
+    left: 1rem;
+    top: 2rem;
+}
+
+.quiz--last__slide.quiz .swiper-button-next {
+    left: 0rem;
+    top: -7.8rem;
+    
+}
+
+.quiz--last__slide.quiz .quiz__head-title {
+    padding-left: 6.5rem;
+}
+
+.quiz--last__slide.quiz .qiuz__pagination {
+    opacity: 0;
+}
+
+.quiz--last__slide.quiz .quiz__button-next {
+    opacity: 0;
+}
+
+.quiz--last__slide.quiz .quiz__form-btn {
+    display: block;
+    position: relative;
+    top: 5rem;
+    margin-top: 0rem;
+    padding: 1.5rem 2.3rem;
+    background: none;
+    border: none;
+}
+
+.quiz--last__slide.quiz .btn__text {
+    font-size: 1.5rem;
+}
+
+.progress-bar {
+    background-color: #fff;
+    height: 4rem;
+    overflow: hidden;
+    position: relative;
+    margin-top: -3.7rem;
+    width: 100%;
+}
+
+.progress-bar-status {
+    position: absolute;
+    z-index: 22;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.progress {
+    background-color: #73C845;
+    bottom: 0;
+    color: #fff;
+    left: 0;
+    top: 0;
+    position: absolute;
+    text-align: center;
+    width: 17%;
+    margin: 0.5rem 0.5rem;
+}
+
+.progress-bar-status-text {
+    color: #282828;
+    font-family: 'roboto', sans-serif;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 115.4%; /* 17.31px */
+    padding-right: 0.5rem;
+}
+
+.get-price {
+    @media (max-width:1024px) {
+        .progress-bar {
+            margin-top: 5rem;
+        }
+
+        .progress-desc {
+            padding-left: 28rem;
+        }
+
+        .get-price__top {
+            display: block;
+        }
+
+        br {
+            display: none;
+        }
+
+        .get-price__title-desc {
+            margin-top: 0rem;
+            padding-top: 5rem;
+            margin-left: 0rem;
+        }
+
+        .get-price__features {
+            
+            margin-top: 5rem;
+            margin-left: 0rem;
+        }
+
+        .get-price-feature {
+            width: 31rem;
+            height: 100%;
+        }
+
+        .get-price-feature__desc {
+            font-size: 1.8rem;
+            padding-left: 2rem;
+            padding-right: 2rem;
+        }
+
+        .get-price__quiz {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+
+        .quiz {
+            width: 60rem;
+        }
+
+        .qiuz__pagination {
+            position: absolute;
+            margin-left: 26rem;
+        }
+
+        .form-select__cards.form-select__card--small {
+            padding-right: 26rem;
+            margin-left: -1rem;
+        }
+
+        .quiz__head {
+            margin-left: 0rem;
+            margin-top: 0rem;
+            margin-right: 0rem;
+        }
+
+        .quiz__body {
+            margin-left: 0rem;
+            margin-right: 0rem;
+        }
+
+        .check__img {
+            max-width: 15rem;
+            height: 10rem;
+        }
+
+        .get-price__end-subtitle {
+            padding-right: 3rem;
+        }
+
+        .check__box {
+            margin-left: 7.4rem;
+            margin-top: 9.4rem;
+        }
+
+        .form-select__cards.form-select__card--big {
+            padding-right: 21rem;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+        }
+
+        .check__img--big {
+            height: 18rem;
+        }
+
+        .quiz__buttons {
+            margin-top: 8rem;
+        }
+
+        .quiz .swiper-button-next {
+            left: 34rem;
+        }
+
+        .quiz__step-title {
+            width: 50rem;
+        }
+
+        .input.quiz__input {
+            width: 50rem;
+        }
+        
+        .quiz__hint {
+            width: 33rem;
+        }
+
+        .input__field {
+            width: 49rem;
+        }
+
+        .form-select__list {
+            width: 49rem;
+        }
+
+        .check__desc-info {
+            width: 23rem;
+        }
+
+        .form-select__cards.form-select__card--info {
+            width: 62rem;
+        }
+    }
+
+
+    @media (max-width:$tablet) {
+        .progress-desc {
+            padding-left: 44rem;
+        }
+
+        .get-price__top {
+            display: block;
+
+        }
+
+        br {
+            display: none;
+        }
+
+        .get-price__title-desc {
+            margin-top: 0rem;
+            padding-top: 5rem;
+            margin-left: 0rem;
+        }
+
+        .get-price__features {
+            margin-top: 5rem;
+            margin-left: 0rem;
+        }
+
+        .get-price-feature {
+            width: 30rem;
+            height: 100%;
+        }
+
+        .get-price-feature:nth-child(1) {
+            padding-top: 3rem;
+        }
+        
+        .get-price-feature:nth-child(2) {
+            padding-top: 3rem;
+        }
+
+        .get-price-feature:nth-child(3) {
+            padding-top: 3rem;
+        }
+
+        .get-price__quiz {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column-reverse;
+
+        }
+
+        .quiz {
+            width: 100%;
+        }
+
+        .input__field {
+            width: 100%;
+        }
+
+        .form-select__list {
+            width: 100%;
+        }
+
+        .form-select__toggle::before {
+            border-width: 0.97rem 0.65rem 0 0.65rem;
+        }
+
+        .quiz__buttons {
+            width: 100%;
+        }
+
+        .qiuz__pagination {
+            margin-left: 48rem;
+        }
+
+        .check__desc {
+            padding-right: 1rem;
+            padding-left: 1rem;
+        }
+
+        .check__img {
+            max-width: 20rem;
+            height: 13.5rem;
+        }
+
+        .check__box {
+            margin-left: 11.6rem;
+            margin-top: 12.4rem;
+        }
+
+        .quiz .swiper-button-next {
+            left: 80%;
+            
+        }
+
+        .form-select__cards.form-select__card--small {
+            display: grid;
+            padding-right: 0rem;
+        }
+        
+        .form-select__cards.form-select__card--big {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            margin-right: -13rem;
+        }
+
+        .check--big {
+            width: 19.4rem;
+        }
+       
+
+        .quiz__hint {
+            width: 100%;
+            margin-left: 0rem;
+            margin-right: 0rem;
+            margin-top: 0rem;
+            margin-bottom: 0rem;
+        }
+
+        .form-select__cards.form-select__card--info {
+            width: 100%;
+            gap: 1rem;
+        }
+
+        .check__desc-info {
+            width: 30rem;
+        }
+
+        .quiz__step-title {
+            width: 100%;
+        }
+        
+            
+    }
+
+    @media (max-width:810px) {
+        .progress-desc {
+            padding-left: 37rem;
+        }
+
+        .get-price-feature {
+            width: 24rem;
+        }
+
+        .get-price__item-img {
+            
+        }
+
+        .get-price-feature__desc {
+            font-size: 1.6rem;
+        }
+
+        .quiz__head-title {
+            font-size: 1.6rem;
+        }
+
+        .form-select {
+            width: 70rem;
+        }
+
+        .quiz__buttons {
+            width: 68.2rem;
+        }
+
+        .qiuz__pagination {
+            margin-left: 42rem;
+        }
+
+        .get_price__info-desc {
+            margin-left: 0rem;
+            
+        }
+
+        .check__box {
+            margin-left: 10.4rem;
+            margin-top: 12.8rem;
+        }
+
+        .form-select__cards.form-select__card--small {
+            width: 70rem;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            margin-bottom: 1rem;
+        }
+
+        .check {
+            margin-bottom: 1.5rem;
+        }
+
+        .check--big {
+            width: 17.5rem;
+            
+        }
+
+        .form-select__cards.form-select__card--big {
+            width: 60rem;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            margin-bottom: 1rem;
+            
+        }
+    }
+
+    @media (max-width:768px) {
+        .get-price__title-desc {
+            margin-top: 0rem;
+            padding-top: 5rem;
+            margin-left: 0rem;
+            font-size: 4rem;
+        }
+
+        .get-price-feature {
+            width: 30rem;
+        }
+
+        
+
+        .qiuz__pagination {
+            padding-right: 0;
+            margin-left: 40rem;
+        }
+
+        .get-price-feature__desc {
+            font-size: 1.5rem;
+        }
+
+        .quiz__steps {
+            width: 62rem;
+        }
+        .form-select {
+            width: 62rem;
+        }
+
+        .input__field {
+            font-size: 1.8rem;
+        }
+
+        .quiz__buttons {
+            width: 62rem;
+        }
+
+        .quiz__button-text-prev {
+            font-size: 1.6rem;
+        }
+
+        .quiz__button-text-next {
+            font-size: 1.6rem; 
+        }
+
+        .quiz .swiper-button-next {
+            left: 75%;
+        }
+
+        .form-select__cards.form-select__card--small {
+            width: 60rem;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            margin-bottom: 1rem;
+            
+        }
+
+        .check__img {
+            max-width: 18.4rem;
+        }
+
+        .check__box {
+            margin-left: 8.8rem;
+            margin-top: 12.6rem;
+        }
+
+        .check {
+            margin-bottom: 1.5rem;
+        }
+
+        .check--big {
+            width: 15.4rem;
+        }
+
+        .form-select__cards.form-select__card--big {
+            width: 62rem;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            margin-bottom: 1rem;
+        }
+    }
+
+
+    @media (max-width:$mobile) {
+        .ceil-header {
+            padding-top: 1rem;
+        }
+
+        .ceil-header__slogan-img {
+            width: 14rem;
+        }
+
+        .ceil-header__tel {
+            font-size: 1.3rem;
+        }
+
+        .ceil-header__container {
+            gap: 0rem;
+        }
+
+        .progress-desc {
+            padding-left: 12rem;
+        }
+
+        .get_price__info-desc br {
+            display: none;
+        }
+        
+        .get_price__info-desc {
+            line-height: 130%;
+            padding-top: 1rem;
+            font-size: 1.8rem;
+        }
+
+        .get-price__top {
+            display: block;
+        }
+
+        .get-price__features {
+            display: block;
+            margin-left: 0rem;
+            margin-top: 0rem;
+        }
+
+        .get-price-feature {
+            width: 27rem;
+            height: 100%;
+            margin-bottom: 1.5rem;
+        }
+
+        .get-price-feature__desc {
+            padding-left: 0rem;
+            padding-right: 0rem;
+        }
+
+        .get-price-feature:nth-child(1) {
+            margin-right: 0rem;
+            padding-top: 0rem;
+            align-items: center;
+            padding-left: 3.4rem;
+            padding-right: 3.4rem;
+        }
+
+        .get-price-feature:nth-child(2) {
+            margin-right: 0rem;
+            padding-top: 0rem;
+            align-items: center;
+            padding-left: 3.4rem;
+            padding-right: 3.4rem;
+        }
+        
+        .get-price-feature:nth-child(3) {
+            margin-right: 0rem;
+            padding-top: 0rem;
+            align-items: center;
+            padding-left: 3.4rem;
+            padding-right: 3.4rem;
+        }
+
+        br {
+            display: none;
+        }
+
+        .get-price__title-desc {
+            text-align: left;
+            font-size: 1.5rem;
+            padding-top: 3rem;
+            margin-top: 0rem;
+            margin-left: 0rem;
+            margin-bottom: 3rem;
+        }
+
+        .get-price__item-img {
+            width: 5.8rem;
+            height: 3rem;
+            margin-top: 1.6rem;
+        }
+
+        .get-price-feature__desc {
+            font-size: 1.5rem;
+            padding-top: 0rem;
+            text-align: center;
+        }
+
+        .get-price__quiz {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column-reverse;
+        }
+
+        .quiz {
+            width: 29rem;
+        }
+
+        .quiz__head {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            margin-left: 0;
+        }
+
+        .quiz__head-title br {
+            display: block;
+        }
+
+        .quiz__head-title {
+            font-size: 1.1rem;
+            margin-left: -7rem;
+            padding-top: 2rem;
+            width: 16rem;
+        }
+
+        .quiz__head-icon {
+            margin-left: 1.5rem;
+            margin-top: 2rem;
+        
+        }
+
+        .qiuz__pagination {
+            padding-top: 2rem;
+            padding-right: 1.5rem;
+            padding-left: 0rem;
+            margin-left: 22rem;
+            white-space: nowrap;
+        }
+
+        .quiz__body {
+            margin-left: 0rem;
+            padding-left: 1.5rem;
+        }
+
+        .quiz__step-title {
+            font-size: 1.6rem;
+            margin-bottom: 1.5rem; 
+            padding-top: 1.5rem;
+            width: 26rem;
+
+        }
+
+        .quiz__swiper.swiper-autoheight .swiper-slide {
+            width: 26rem;
+        }
+
+        .input__field {
+            width: 26rem;
+        }
+
+        .form-select__toggle::before {
+            border-width: 0.87rem 0.65rem 0 0.65rem;
+        }
+
+        .form-select {
+            font-size: 1.4rem;
+        }
+
+        .form-select__list {
+            width: 26rem;
+            gap: 1rem;   
+        }
+
+        .get-price__quiz {
+            padding-bottom: 1.6rem;
+        }
+
+        .quiz__buttons {
+            width: 26rem;
+            margin-top: 3rem;
+            display: flex;
+            margin-bottom: 3rem;
+        }
+
+        .quiz--last__slide .quiz__buttons  {
+            margin-top: 10rem;
+        }
+
+        .quiz .swiper-button-prev {
+
+        }
+
+        .quiz .swiper-button-next {
+            top: 0;
+            left: 0;
+            width: 14rem;
+            margin-left: 3rem;
+        }
+        
+        .quiz__steps {
+            width: 26rem;
+        }
+
+        .form-select__cards.form-select__card--small {
+            grid-template-columns: 1fr 1fr;
+            display: grid;
+            width: 23rem;
+            margin-left: 0rem;
+        }
+
+        .check__box {
+            margin-left: 3.8rem;
+            margin-top: 6.6rem;
+            
+        }
+
+        .check__desc {
+            font-size: 1.1rem;
+        }
+        
+        .check {
+            padding-left: 0rem;
+            width: 10rem;
+            padding-bottom: 10.3rem;
+            height: 9.5rem;
+            margin-left: 0.4rem;
+            margin-right: 0.4rem;
+            color: #282828;
+            font-family: 'roboto', sans-serif;
+            font-size: 1.06rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 115.4%;
+        }
+
+        .check:nth-of-type(3) {
+            padding-bottom: 11rem;
+        }
+
+        .check__img {
+
+            max-width: 10rem;
+            height: 8rem; 
+        }
+
+        .form-select__cards.form-select__card--big {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr ;
+            width: 47rem;
+            margin-bottom: 2rem;
+            margin-right: 0rem;
+        }
+
+        .check--big {
+            padding-left: 0rem;
+            width: 7.9rem;
+            height: 16.5rem;
+            margin-left: 0.4rem;
+            margin-right: 0.4rem;
+            color: #282828;
+            font-family: 'roboto', sans-serif;
+            font-size: 1.06rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 115.4%;
+        }
+        
+        .check__img--big {
+            display: block;
+            max-width: 16rem;
+            height: 11.52rem;
+            background-size: cover;
+            width: 100%;
+            box-shadow: 0 1px 5px 0 rgba(0,0,0,.2);
+            border-radius: 4px;
+            margin-bottom: 1rem;
+            
+        }
+
+        .quiz--last__slide.quiz .quiz__head-title {
+            margin-left: -4.8rem;
+            font-size: 1.4rem;
+            width: 29rem;  
+        }
+
+        .input.quiz__input {
+            padding-right: 1rem;
+            margin-right: 0.3rem;
+            margin-bottom: 2rem;
+            width: 90%;
+        }
+
+        .input__field {
+            width: 25rem;
+        }
+
+        .form-select__cards.form-select__card--info {
+            display: block;
+        }
+
+        .check__desc-info {
+            width: 24rem;
+        }
+
+        .check__box-desc {
+            margin-top: 2.1rem;
+        }
+
+        .input__icon {
+            display: none;
+        }
+
+        .check-last {
+            display: block;
+            width: 26rem;
+            color: #282828;
+            font-family: 'roboto', sans-serif;
+            font-size: 1.06rem;
+            font-style: normal;
+            font-weight: 400;
+        }
+
+        .quiz--last__slide.quiz .swiper-button-prev {
+            top: -2rem;
+        }
+
+        .quiz--last__slide.quiz .quiz__form-btn {
+            top: 3.5rem;
+            padding: 1.5rem 2.3rem;
+            text-align: center;
+            
+        }
+        
+        .quiz--last__slide.quiz .btn__text {
+            font-size: 1.3rem;
+        }
+
+        .quiz--last__slide.quiz .btn {
+            font-size: 1.8rem;
+        }
+
+        .quiz__hint {
+            
+        }
+
+        .market-footer-wrap {
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            flex-direction: column;
+          }
+          
+          .market-footer-wrap__link {
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+          }
+          
+          .market-footer-wrap__link:last-child {
+            border-bottom: 0.1rem solid #949393;
+          }
+          
+          .market-footer-wrap__link:last-child:hover {
+            color: var(--color-primary);
+            border-color: var(--color-primary);
+          }
+
+    }
+
+    
+}
+

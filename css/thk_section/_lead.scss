@@ -1,0 +1,171 @@
+.lead {
+    position: relative;
+    z-index: 1;
+    
+}
+
+.lead__container {
+    display: grid;
+    grid-template-columns: auto 36rem;
+    background: #F0C45B;
+    padding-top: 6rem;
+    padding-bottom: 6.9rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    box-sizing: border-box;
+}
+
+
+.lead__text{
+    margin-left: 9rem;
+    margin-top: -6.1rem;
+}
+
+.lead__text-title {
+    color: #232529;
+    font-size: 5.6rem;
+    font-family: 'Bebas', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 116.9%;
+    text-transform: uppercase;
+    margin-top: 5.4rem;
+    
+}
+
+.lead__text-info {
+    color: #282828;
+    font-size: 1.8rem;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 148.9%;
+    margin-top: 0.6rem;
+}
+
+.lead__media {
+    width: 20.7rem;
+    height: 10.5rem;
+}
+
+.lead__media-img {
+    
+}
+
+.lead__form {
+    position: relative;
+    display: grid;
+    gap: 2rem;
+    width: 100%;
+    margin-left: -9rem;
+}
+
+.lead__form-btn {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-size: 2rem;
+}
+
+button {
+    background: transparent;
+    border: none;
+    
+ }
+
+
+ .lead__form-btn {
+    
+ }
+
+.input__icon {
+    position: absolute;
+    width: 1.4rem;
+    height: 1.4rem;
+    left: 4rem;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.lead {
+    @media (max-width:810px) {
+        .lead__text-title {
+            font-size: 4rem;
+        }
+
+        .lead__text-info {
+            font-size: 1.6rem;
+        }
+
+        .lead__text {
+            margin-left: 7rem;
+        }
+
+        .lead__form  {
+            width: 88%;
+            margin-left: -1rem;
+        }
+
+        .btn__text {
+            font-size: 1.8rem;
+        }
+    }
+
+    @media (max-width:$mobile) {
+        .lead__container {
+            display: block;
+        }
+
+        .lead__text {
+            margin-left: -1rem;
+            margin-top: -6.7rem;
+            padding-bottom: 0.5rem;
+        }
+
+        .lead__text-title {
+            font-size: 3rem;
+            padding-bottom: 0.8rem;
+        }
+
+        .lead__text-info br {
+            display: none;
+        }
+
+        .lead__text-info {
+            font-size: 1.5rem;
+        }
+
+        .lead__media {
+            display: none;
+        }
+
+        .lead__form {
+            width: 107%;
+            gap: 0.9rem;
+            margin-bottom: -1.8rem;
+        }
+
+        .input {
+            padding: 1.5rem 5.6rem;
+        }
+
+        .input__icon {
+            left: 3.3rem;
+        }
+
+        .input__field {
+            font-size: 1.5rem;
+        }
+
+        .lead__form-btn{
+            margin-top: 0.7rem;
+        }
+
+        .btn {
+            padding: 1.8rem 5.3rem;
+        }
+
+        .btn__text {
+            font-size: 1.5rem;
+        }
+    }
+}

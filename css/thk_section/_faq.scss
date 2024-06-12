@@ -1,0 +1,219 @@
+.faq {
+    background: #FBFBFB;
+    position: relative;
+}
+
+.faq::before {
+    content: "";
+    background: #FFCF57;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    clip-path: polygon(40% 63%, 100% 63%, 100% 100%, 0 100%, 0 12%);
+    top: 0;
+    left: 0;
+    
+}
+
+.faq__container {
+    max-width: 83rem;
+}
+
+.faq__top {
+    padding-top: 7.6rem;
+    text-align: center;
+}
+
+.faq__top-title {
+    color: #282828;
+    font-family: 'Bebas', sans-serif;
+    font-size: 4.7rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 116.9%;
+    margin-bottom: 1.4rem;
+}
+
+.faq-card__question-title {
+    color: #424242;
+    font-family: 'gilroy', sans-serif;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%;
+}
+
+
+.faq-card__answer-desc {
+    color: #464646;
+    font-family: 'gilroy', sans-serif;
+    font-size: 1.7rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    
+}
+
+.faq__bottom {
+    padding-bottom: 13.3rem;
+    text-align: center;
+}
+
+.faq-card {
+    --toggler-line-width: 100%;
+    --toggler-line-height: 0.2rem;
+    --closer-width: 2rem;
+    --closer-height: 2rem;
+}
+
+.faq-card__question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+   border-radius: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.10);
+    background: #F9FAFB;
+}
+
+.bayan--opened .faq-card__question  {
+    border-bottom-left-radius: 0rem;
+    border-bottom-right-radius: 0rem;
+}
+
+.faq-card__answer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+    border-bottom-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.10);
+    border-left: 1px solid rgba(0, 0, 0, 0.10);
+    border-right: 1px solid rgba(0, 0, 0, 0.10);
+    background: #F9FAFB;
+}
+
+.bayan--opened .bayan__toggler::before,
+.bayan--opened .bayan__toggler::after {
+    background: #A768BD;
+}
+
+.bayan--opened .faq-card__question-title {
+    color: #58A32E;
+}
+
+.faq__bottom {
+    margin-top: 3.6rem;
+}
+
+
+.market-footer-wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding-bottom: 40px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  
+  .market-footer-wrap__link {
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 130%;
+    text-align: right;
+    color: #949393;
+  }
+  
+  .market-footer-wrap__link:last-child {
+    border-bottom: 1px solid #949393;
+  }
+  
+  .market-footer-wrap__link:last-child:hover {
+    color: var(--color-primary);
+    border-color: var(--color-primary);
+  }
+
+.faq {
+    
+    @media (max-width:1024px) {
+        .faq-card__question-title {
+            font-size: 2.3rem;
+        }
+
+        .faq-card {
+            --closer-width: 3.7rem;
+        }
+        
+        .faq-card__answer-desc {
+            font-size: 2rem;
+        }
+    }
+
+    @media (max-width:$mobile) {
+
+        .faq-card {
+            --closer-width: 1.4rem;
+            --closer-height: 1.4rem
+        }
+
+        .faq-btn {
+            margin-top: 0rem;
+            padding: 2rem 6.3rem;
+            font-size: 1.5rem;
+        }
+
+        .faq__top-title {
+            font-size: 2.5rem;
+        }
+
+        .faq-card__question {
+            padding-left: 0.5rem;
+            padding-top: 1.5rem;
+            padding-bottom: 1.5rem;
+        }
+
+        .faq-card__question-title {
+            font-size: 1.5rem;
+        }
+
+        .faq-card__answer-desc {
+            font-size: 1.4rem;
+        }
+
+        .faq__bottom {
+            margin-bottom: -8rem;
+        }
+
+        .market-footer-wrap {
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            flex-direction: column;
+          }
+          
+          .market-footer-wrap__link {
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+          }
+          
+          .market-footer-wrap__link:last-child {
+            border-bottom: 0.1rem solid #949393;
+          }
+          
+          .market-footer-wrap__link:last-child:hover {
+            color: var(--color-primary);
+            border-color: var(--color-primary);
+          }
+    }
+}

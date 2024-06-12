@@ -1,0 +1,149 @@
+.popup__bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.8);
+    opacity: 0; // Скрываем фон и сам попап
+    pointer-events: none; // Запрещаем ему быть целью событий
+    transition: 0.5s all;
+}
+
+.popup__bg.active { // При добавлении класса 'active'
+    opacity: 1; // Показываем фон и попап
+    pointer-events: all; // Возвращаем события
+    transition: 0.8s all;
+
+}
+
+.popup__bg2 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.8);
+    opacity: 0; // Скрываем фон и сам попап
+    pointer-events: none; // Запрещаем ему быть целью событий
+    transition: 0.5s all;
+}
+
+.popup__bg2.active { // При добавлении класса 'active'
+    opacity: 1; // Показываем фон и попап
+    pointer-events: all; // Возвращаем события
+    transition: 0.8s all;
+
+}
+
+.popup {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0); // Центрируем и масштабируем в 0 само окно
+    background: #fff;
+    width: 69rem;
+    padding: 3rem;
+    transition: 0.5s all;
+}
+
+.popup2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0); // Центрируем и масштабируем в 0 само окно
+    background: #fff;
+    width: 69rem;
+    padding: 3rem;
+    transition: 0.5s all;
+}
+
+.popup.active { // При добавлении класса 'active'
+    transform: translate(-50%, -50%) scale(1); // Так же центрируем и плавно увеличиваем
+    transition: 0.5s all;
+}
+
+.popup2.active { // При добавлении класса 'active'
+    transform: translate(-50%, -50%) scale(1); // Так же центрируем и плавно увеличиваем
+    transition: 0.5s all;
+}
+
+.popup__close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    width: 3rem;
+    height: 3rem;
+    cursor: pointer;
+}
+
+.popup__close2 {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    width: 3rem;
+    height: 3rem;
+    cursor: pointer;
+}
+
+.open-popup {
+
+    position: relative;
+    z-index: 22;
+    color: #000;
+}
+
+.open-popup2 {
+    position: relative;
+    z-index: 22;
+    color: #000;
+}
+
+.popup-desc {
+    color: #000;
+    font-family: 'roboto', sans-serif;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 135%; /* 20.25px */
+}
+
+.popup__bg.active {
+    @media (max-width:$mobile) {
+        .popup {
+            width: 30rem;
+            height: 85%;
+
+        }
+
+        .popup-desc {
+            font-size: 1.1rem;
+        }
+
+        .popup-desc br {
+            display: none;
+        }
+    }
+}
+
+.popup__bg2.active {
+    @media (max-width:$mobile) {
+        .popup2 {
+            width: 30rem;
+            height: 30%;
+
+        }
+
+        .popup-desc {
+            font-size: 1.1rem;
+        }
+
+        .popup-desc br {
+            display: none;
+        }
+    }
+}
+
+
+
+

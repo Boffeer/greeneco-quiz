@@ -595,3 +595,45 @@
         }
     }
 }
+
+.hero-thk__offer-bullet {
+    --icon-size: 6em;
+    position: relative;
+    font-size: 2rem;
+    display: inline-grid;
+    gap: 0.5em;
+    grid-template-columns: var(--icon-size) auto;
+    align-items: center;
+}
+
+.hero-thk__offer-bullet-icon {
+    --size: var(--icon-size);
+    display: block;
+    width: var(--size);
+    height: var(--size);
+    object-fit: contain;
+}
+
+.hero-thk__offer-bullet-text {
+    color: #73C845;
+    font-size: 1.5em;
+    
+    @media (max-width: $tablet) {
+        font-size: unset;
+    }
+}
+.hero-thk__offer-bullet-text:hover {
+    @media (any-hover: hover) {
+        text-decoration: none;
+    }
+}
+
+.hero-thk__offer-bullet-text::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+}

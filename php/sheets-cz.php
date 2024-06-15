@@ -1,10 +1,33 @@
 <?php
+
+include_once __DIR__ . '/TelegramLead.php';
     // формируем запись в таблицу google (изменить)
 //    $url = "https://docs.google.com/forms/d/1DA9da4e_CUlEgYTGRkkp5_BvqHmixuUtRd9h05QVJx8/formResponse";
 
     $url = "https://docs.google.com/forms/u/0/d/e/1FAIpQLSes1-dKTvHJf8tBjdAasMMzvjoWCc6EiN1rBnvfPpdhKK5KZw/formResponse";
 //    $url = "https://docs.google.com/forms/d/1FAIpQLSes1-dKTvHJf8tBjdAasMMzvjoWCc6EiN1rBnvfPpdhKK5KZw/formResponse";
-// массив данных (изменить entry, draft и fbzx)
+    // массив данных (изменить entry, draft и fbzx)
+
+    $telegram = new \Merlin\TelegramLead();
+    $telegram->addString('<b>Quiz lead</b>');
+    $ignoreTelegramKeys = [
+        'salebot',
+        'redirect',
+        'form_name',
+        'UTM',
+        'ym_event',
+    ];
+    foreach ($_POST as $key => $string) {
+        if (in_array($key, $ignoreTelegramKeys)) {
+            continue;
+        }
+        if (strpos($string, 'step') !== false) {
+            $string = $key.': ' . $string;
+        }
+        $telegram->addString($string);
+    }
+    $telegram->send();
+
     $post_data = array (
         "entry.2127694805" => $_POST['user_name'],
         "entry.122091207" => $_POST['user_tel'],

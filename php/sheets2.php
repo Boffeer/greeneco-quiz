@@ -1,4 +1,8 @@
 <?php
+
+
+include_once __DIR__ . '/TelegramLead.php';
+
     // формируем запись в таблицу google (изменить)
     $url = "https://docs.google.com/forms/u/0/d/e/1FAIpQLScCwnFlYYw2ds9pVV3-KbDL9XfohYxgCvlyubFIPgFAf7dMJg/formResponse";
     // массив данных (изменить entry, draft и fbzx)
@@ -24,5 +28,27 @@
     //заполняем таблицу google
     $output = curl_exec($ch);
     curl_close($ch);
+
+
+    $telegram = new \Merlin\TelegramLead();
+    $telegram->addString('<b>Quiz thanks</b>');
+    $ignoreTelegramKeys = [
+        'salebot',
+        'redirect',
+        'form_name',
+        'UTM',
+        'ym_event',
+    ];
+    foreach ($_POST as $key => $string) {
+    if (in_array($key, $ignoreTelegramKeys)) {
+        continue;
+    }
+    if (strpos($string, 'step') !== false) {
+        $string = $key.': ' . $string;
+    }
+    $telegram->addString($string);
+    $telegram->send();
+}
+
 
 ?>
